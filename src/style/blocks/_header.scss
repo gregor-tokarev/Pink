@@ -1,0 +1,89 @@
+.header {
+  @extend %container;
+
+  background-color: #283645;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 70px;
+  box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  display: flex;
+  justify-content: space-between;
+
+  &__toggle-button {
+    width: 25px;
+    opacity: 1;
+    height: 25px;
+    background: url("images/menu-cross.svg") no-repeat center / 25px 25px;
+  }
+
+  &__nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+  }
+
+  &--close {
+    background-color: rgba(15, 15, 15, 0.3);
+    box-shadow: none;
+
+    .header__nav {
+      display: none;
+    }
+  }
+
+  &__toggle-button--close {
+    background-image: url("images/menu-burger.svg");
+  }
+
+  &__logo {
+    flex-shrink: 0;
+    opacity: 1;
+  }
+
+  &__list-item {
+    background-color: #283645;
+    color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 70px;
+    text-transform: uppercase;
+    height: 70px;
+    box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  @media ($desktop) {
+    &--close &__nav,
+    &__nav {
+      position: static;
+      display: block;
+      flex-shrink: 1;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__list-item {
+      height: auto;
+      flex-basis: 0;
+      color: #fff;
+      box-shadow: none;
+      flex-shrink: 1;
+      padding: 0 3%;
+      background-color: transparent;
+      font-size: 18px;
+      font-weight: 100;
+      line-height: 18px;
+    }
+
+    &__toggle-button {
+      display: none;
+    }
+  }
+}

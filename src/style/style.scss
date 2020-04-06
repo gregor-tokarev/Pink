@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixins&extends";
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("fonts/open-sans-v17-cyrillic_latin-regular.woff2") format("woff2"),
+    url("fonts/open-sans-v17-cyrillic_latin-regular.woff") format("woff");
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+@import "blocks/header";
+@import "blocks/button-reset";
+@import "blocks/list-reset";
+@import "blocks/intro";

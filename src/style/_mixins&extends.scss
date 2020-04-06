@@ -1,0 +1,11 @@
+%container {
+  padding: 0 6.25%;
+
+  @media ($tablet) {
+    padding: 0 3%;
+  }
+
+  @media ($desktop) {
+    padding: 0 10.5%;
+  }
+}
