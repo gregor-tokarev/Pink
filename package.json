@@ -1,0 +1,53 @@
+{
+  "name": "Mishka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "stylelint ./src/style/**/*{.scss,.sass} --fix --color --config ./.stylelintrc --syntax scss",
+    "style:fix": "stylelint src/style/**/*.scss --syntax scss --fix",
+    "build": "gulp build",
+    "dev": "gulp dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "browser-sync": "^2.26.7",
+    "csscomb": "^4.3.0",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlnano": "^0.1.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^1.0.1",
+    "gulp-uglify": "^3.0.2",
+    "husky": "^4.2.3",
+    "imagemin-jpeg-recompress": "^6.0.0",
+    "lint-staged": "^10.1.1",
+    "stylelint": "^13.3.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.16.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.8.7",
+    "gulp-svgstore": "latest"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.scss": [
+      "npm run style:lint"
+    ]
+  }
+}
