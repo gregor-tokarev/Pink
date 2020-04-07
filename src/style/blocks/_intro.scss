@@ -1,4 +1,132 @@
 .intro {
-  background: url("images/back-mobile.jpg") center / cover no-repeat;
-  min-height: 500px;
+  padding-top: 70px;
+  background: url('images/back-mobile.jpg') center / cover no-repeat;
+
+  @media #{$retina} {
+    background-image: url('images/back-mobile@3x.jpg');
+  }
+
+  @media ($tablet) {
+    background-image: url('images/back-tablet.jpg');
+    @media #{$retina} {
+      background-image: url('images/back-tablet@3x.jpg');
+    }
+  }
+
+  @media ($desktop) {
+    background-image: url('images/back-desktop.jpg');
+
+    @media #{$retina} {
+      background-image: url('images/back-desktop@3x.jpg');
+    }
+  }
+
+  @extend %container;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  @media ($tablet) {
+    &__wrapper {
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__download {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    background-color: #1d2631;
+
+    @extend %container;
+
+    @media ($tablet) {
+      background-color: transparent;
+      flex-basis: 50%;
+      flex-grow: 0;
+    }
+  }
+
+  &__platforms {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13.5% 0;
+    margin: 40px 0 30px;
+
+    @media ($desktop) {
+      margin: 75px 0 60px;
+    }
+  }
+
+  &__download-button {
+    font-family: 'Open Sans Bold', Arial, sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 20px 40px;
+    border: 3px solid #fff;
+    border-radius: 50px;
+
+    &:hover {
+      color: $hover-color;
+      background-color: #fff;
+    }
+
+    &:active {
+      background-color: #fff;
+      color: darken($hover-color, 30%);
+    }
+
+    @extend %link-reset;
+  }
+
+  &__title {
+    display: none;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 40px;
+
+    @media ($tablet) {
+      display: block;
+    }
+  }
+
+  &__phone {
+    min-height: 460px;
+    position: relative;
+
+    @media ($tablet) {
+      position: absolute;
+      width: 80%;
+      min-height: unset;
+      height: 100%;
+      top: 0;
+      right: 0;
+    }
+
+    &-image {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      left: 0;
+      z-index: 1;
+      height: 315px;
+
+      @media ($tablet) {
+        left: unset;
+        width: auto;
+        height: 545px;
+        right: 0;
+        z-index: 1;
+      }
+    }
+  }
 }

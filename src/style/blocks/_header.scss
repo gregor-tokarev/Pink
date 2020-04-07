@@ -1,28 +1,29 @@
 .header {
-  @extend %container;
-
-  background-color: #283645;
-  align-items: center;
   position: absolute;
   right: 0;
   left: 0;
-  height: 70px;
-  box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  height: 70px;
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+  @extend %container;
 
   &__toggle-button {
     width: 25px;
-    opacity: 1;
     height: 25px;
-    background: url("images/menu-cross.svg") no-repeat center / 25px 25px;
+    opacity: 1;
+    background: url('images/menu-cross.svg') no-repeat center / 25px 25px;
   }
 
   &__nav {
     position: absolute;
+    top: 70px;
+    z-index: 999;
     right: 0;
     left: 0;
-    top: 70px;
   }
 
   &--close {
@@ -35,25 +36,31 @@
   }
 
   &__toggle-button--close {
-    background-image: url("images/menu-burger.svg");
+    background-image: url('images/menu-burger.svg');
   }
 
   &__logo {
     flex-shrink: 0;
     opacity: 1;
+
+    &:hover {
+      fill: $hover-color;
+    }
   }
 
   &__list-item {
-    background-color: #283645;
-    color: #fff;
-    font-family: "Open Sans", Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
+    line-height: 70px;
+    height: 70px;
+    cursor: pointer;
+    user-select: none;
     text-align: center;
     white-space: nowrap;
-    line-height: 70px;
     text-transform: uppercase;
-    height: 70px;
+    color: #fff;
+    background-color: #283645;
     box-shadow: 0 1px 0 #000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
   }
 
@@ -70,16 +77,24 @@
     }
 
     &__list-item {
-      height: auto;
-      flex-basis: 0;
-      color: #fff;
-      box-shadow: none;
-      flex-shrink: 1;
-      padding: 0 3%;
-      background-color: transparent;
       font-size: 18px;
       font-weight: 100;
       line-height: 18px;
+      flex-basis: 0;
+      flex-shrink: 1;
+      height: auto;
+      padding: 0 3%;
+      color: #fff;
+      background-color: transparent;
+      box-shadow: none;
+
+      &:hover {
+        color: $hover-color;
+      }
+
+      &:active {
+        color: $active-color;
+      }
     }
 
     &__toggle-button {
