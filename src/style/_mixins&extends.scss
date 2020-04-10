@@ -1,4 +1,6 @@
 %container {
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 0 6.25%;
 
   @media ($tablet) {
@@ -13,4 +15,38 @@
 %link-reset {
   text-decoration: none;
   color: inherit;
+}
+
+@mixin triangle() {
+  position: relative;
+
+  &::before {
+    width: 0;
+    content: '';
+    display: block;
+    height: 0;
+    left: 0;
+    z-index: 2;
+    top: -30px;
+    border-color: transparent;
+    position: absolute;
+    border-right: 50vw solid #f2f2f2;
+    border-left: 50vw solid transparent;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #f2f2f2;
+
+    @media ($tablet) {
+      border-bottom-width: 25px;
+      border-top-width: 25px;
+      top: -50px;
+    }
+
+    @media ($desktop) {
+      border-bottom-width: 45px;
+      border-top-width: 45px;
+      border-left-width: 49.5vw;
+      border-right-width: 49.5vw;
+      top: -90px;
+    }
+  }
 }

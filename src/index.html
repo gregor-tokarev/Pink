@@ -7,23 +7,26 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-700.woff2" as="font">
   <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-300.woff2" as="font">
 </head>
 <body>
 <header class="header">
-  <picture class="header__logo">
-    <source media="(min-width:960px)" srcset="images/logotype-white-desktop.svg">
-    <source media="(min-width:660px)" srcset="images/logotype-white-tablet.svg">
-    <img src="images/logotype-white-mobile.svg" alt="logo">
-  </picture>
-  <button class="header__toggle-button button-reset"></button>
-  <nav class="header__nav">
-    <ul class="header__list list-reset">
-      <li class="header__list-item">Главная</li>
-      <li class="header__list-item">Фотографии</li>
-      <li class="header__list-item">Конкурс</li>
-      <li class="header__list-item">HTML Academy</li>
-    </ul>
-  </nav>
+  <div class="header__wrapper">
+    <picture class="header__logo">
+      <source media="(min-width:960px)" srcset="images/logotype-white-desktop.svg">
+      <source media="(min-width:660px)" srcset="images/logotype-white-tablet.svg">
+      <img src="images/logotype-white-mobile.svg" alt="logo">
+    </picture>
+    <button class="header__toggle-button button-reset"></button>
+    <nav class="header__nav">
+      <ul class="header__list list-reset">
+        <li class="header__list-item">Главная</li>
+        <li class="header__list-item">Фотографии</li>
+        <li class="header__list-item">Конкурс</li>
+        <li class="header__list-item">HTML Academy</li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 <section class="intro">
@@ -53,9 +56,66 @@
   <h2 class="info__title">
     <p>Устали от серости мегаполиса?
     </p>
-    <p>Нам есть, что вам
+    <p>Нам есть, что вам <br>
       предложить!</p>
   </h2>
+  <div class="info__bg">
+    <div class="info__wrapper">
+      <ul class="info__benefits">
+        <li class="info__benefit">
+          <h3 class="info__benefit-title">Поднимает настроение</h3>
+          <p class="info__benefit-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько
+            кликов!</p>
+        </li>
+        <li class="info__benefit">
+          <h3 class="info__benefit-title">Меняет мир вокруг</h3>
+          <p class="info__benefit-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+            эффект</p>
+        </li>
+        <li class="info__benefit">
+          <h3 class="info__benefit-title">Заводит новых друзей</h3>
+          <p class="info__benefit-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+      <div class="info__phones">
+        <div class="info__phone-1 info__phone">
+          <picture>
+            <source media="(min-width: 960px)" srcset="images/info__phone-1-desktop.png">
+            <img src="images/info__phone-1.png" alt="">
+          </picture>
+        </div>
+        <div class="info__phone-2 info__phone">
+          <img src="images/info__phone-2.png" alt="">
+        </div>
+        <div class="info__phone-3 info__phone">
+          <img src="images/info__phone-3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="effect">
+  <div class="effect__wrapper">
+    <div class="effect__image">
+      <img src="images/clock.png" alt="">
+    </div>
+    <div class="effect__content">
+      <h2 class="effect__title">Эффект
+        на 24 часа!</h2>
+      <p class="effect__text">Британские ученые провели исследования
+        и доказали, что положительный эффект
+        от использования приложения длится
+        целые сутки!</p>
+      <a href="" class="effect__link">Узнать больше об исследовании</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+
 </section>
 <script src="all.js"></script>
 </body>

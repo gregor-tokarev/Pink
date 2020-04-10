@@ -1,0 +1,69 @@
+.effect {
+  display: none;
+  padding: 55px 0;
+
+  @media ($tablet) {
+    display: block;
+  }
+
+  @media ($desktop) {
+    background-color: #f2f2f2;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+      flex-grow: 1;
+    }
+
+    @extend %container;
+  }
+
+  &__image {
+    flex-basis: 50%;
+    flex-grow: 1;
+
+    @media ($desktop) {
+      flex-basis: 0;
+    }
+  }
+
+  &__content {
+    flex-basis: 50%;
+    flex-grow: 2;
+
+    @media ($desktop) {
+      flex-basis: 0;
+    }
+  }
+
+  &__title {
+    color: #000;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  &__text {
+    color: #283645;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px 0;
+    font-weight: 400;
+
+    @media ($desktop) {
+      margin: 35px 0 45px;
+    }
+  }
+
+  &__link {
+    color: #d22856;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 24px;
+    text-decoration: underline;
+  }
+}

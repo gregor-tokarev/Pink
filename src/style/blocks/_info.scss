@@ -1,0 +1,149 @@
+.info {
+  &__title {
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 65px;
+    font-family: "Open Sans Light", Arial, sans-serif;
+
+    p:first-child {
+      margin-bottom: 40px;
+
+      @media ($tablet) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media ($tablet) {
+      margin-bottom: 100px;
+      font-size: 40px;
+    }
+
+    @media ($desktop) {
+      margin-bottom: 165px;
+      font-size: 50px;
+    }
+  }
+
+  &__bg {
+    background-color: #f2f2f2;
+
+    @include triangle;
+  }
+
+  &__wrapper {
+    @media ($tablet) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    @media ($desktop) {
+      flex-direction: column-reverse;
+    }
+
+    @extend %container;
+  }
+
+  &__benefits {
+    background-color: #f2f2f2;
+    list-style-type: none;
+    flex-basis: 50%;
+    align-self: center;
+    text-align: center;
+
+    @media ($tablet) {
+      padding-bottom: 45px;
+    }
+
+    @media ($desktop) {
+      display: flex;
+    }
+  }
+
+  &__benefit {
+    text-align: center;
+
+    @media ($mobile) {
+      &:not(:last-child) {
+        margin-bottom: 45px;
+      }
+    }
+
+    @media ($tablet) {
+      text-align: left;
+    }
+
+    @media ($desktop) {
+      text-align: center;
+      //padding: 25px 45px 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__benefit-title {
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__benefit-text {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #283645;
+  }
+
+  &__phones {
+    text-align: center;
+    margin-top: 45px;
+    position: relative;
+    z-index: 3;
+
+    > :not(:first-child) {
+      display: none;
+
+      @media ($desktop) {
+        display: block;
+      }
+    }
+
+    @media ($tablet) {
+      margin-top: -50px;
+      flex-basis: 50%;
+    }
+
+    @media ($desktop) {
+      display: flex;
+      margin-top: -90px;
+      flex-direction: row-reverse;
+    }
+  }
+
+  @media ($desktop) {
+    &__phone {
+      flex-grow: 1;
+      transform: translateX(20px);
+    }
+  }
+
+  &__phone-1 {
+    width: 100%;
+
+    @media ($tablet) {
+      height: 100%;
+      text-align: left;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    @media ($desktop) {
+      width: auto;
+      text-align: center;
+    }
+  }
+}

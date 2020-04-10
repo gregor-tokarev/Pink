@@ -1,6 +1,11 @@
 .intro {
   padding-top: 70px;
-  background: url('images/back-mobile.jpg') center / cover no-repeat;
+  margin-bottom: 45px;
+  background: #2b3848 url('images/back-mobile.jpg') center / cover no-repeat;
+
+  @media ($mobile) {
+    padding: 0;
+  }
 
   @media #{$retina} {
     background-image: url('images/back-mobile@3x.jpg');
@@ -8,6 +13,7 @@
 
   @media ($tablet) {
     background-image: url('images/back-tablet.jpg');
+
     @media #{$retina} {
       background-image: url('images/back-tablet@3x.jpg');
     }
@@ -21,10 +27,16 @@
     }
   }
 
-  @extend %container;
 
   &__wrapper {
     position: relative;
+
+    @media ($mobile) {
+      padding: 0;
+    }
+
+    @extend %container;
+
   }
 
   @media ($tablet) {
@@ -42,16 +54,18 @@
     position: relative;
     z-index: 2;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 35px;
+    padding: 25px 6% 35px;
     background-color: #1d2631;
-
-    @extend %container;
 
     @media ($tablet) {
       background-color: transparent;
+      padding: 0;
       flex-basis: 50%;
       flex-grow: 0;
+    }
+
+    @media ($desktop) {
+      flex-basis: 30%;
     }
   }
 
@@ -105,11 +119,15 @@
 
     @media ($tablet) {
       position: absolute;
-      width: 80%;
+      width: 70%;
       min-height: unset;
       height: 100%;
       top: 0;
       right: 0;
+    }
+
+    @media ($desktop) {
+      width: 50%;
     }
 
     &-image {
@@ -124,7 +142,6 @@
         left: unset;
         width: auto;
         height: 545px;
-        right: 0;
         z-index: 1;
       }
     }
