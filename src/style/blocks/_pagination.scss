@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60px;
+  align-items: center;
+  margin: 0 auto;
+
+  &__item {
+    width: 10px;
+    border-radius: 50%;
+    height: 10px;
+    background-color: #bec3c7;
+
+    &--active {
+      background-color: white;
+      width: 13px;
+      height: 13px;
+      border: 3px solid black;
+    }
+  }
+
+  @media ($desktop) {
+    display: none;
+  }
+}

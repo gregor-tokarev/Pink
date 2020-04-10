@@ -1,0 +1,60 @@
+.reviews {
+  &__wrapper {
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    @extend %container;
+  }
+
+  &__author {
+    text-align: center;
+    color: #000;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  &__sub-title {
+    display: none;
+    color: #283645;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+
+    @media ($tablet) {
+      display: block;
+    }
+  }
+
+  &__text {
+    color: #283645;
+    text-align: center;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    padding: 25px 0;
+
+    @media ($tablet) {
+      padding: 50px 0;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+  }
+
+  &__content {
+    @media ($tablet) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    @media ($desktop) {
+      margin: 0 auto;
+      width: 71%;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.slider {
+  position: relative;
+
+  &__arrow {
+    position: absolute;
+    visibility: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media ($desktop) {
+      visibility: visible;
+    }
+
+    &--right {
+      right: 0;
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}

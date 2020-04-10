@@ -32,6 +32,8 @@
   }
 
   &__wrapper {
+    padding-top: 55px;
+
     @media ($tablet) {
       display: flex;
       flex-direction: row-reverse;
