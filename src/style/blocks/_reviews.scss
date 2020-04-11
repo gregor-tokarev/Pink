@@ -4,6 +4,10 @@
     padding-bottom: 70px;
 
     @extend %container;
+
+    @media ($desktop) {
+      margin-bottom: 130px;
+    }
   }
 
   &__author {

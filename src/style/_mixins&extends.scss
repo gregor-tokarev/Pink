@@ -44,9 +44,28 @@
     @media ($desktop) {
       border-bottom-width: 45px;
       border-top-width: 45px;
-      border-left-width: 49.5vw;
-      border-right-width: 49.5vw;
+      border-left-width: 49.57031vw;
+      border-right-width: 49.57031vw;
       top: -90px;
     }
+  }
+}
+
+@mixin angel-message($message, $color: #d22856) {
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: $message;
+    position: absolute;
+    transform-origin: 50% 50%;
+    transform: rotate(-45deg);
+    left: -30px;
+    text-transform: uppercase;
+    top: 5px;
+    line-height: 40px;
+    width: 120px;
+    height: 40px;
+    background-color: $color;
   }
 }
