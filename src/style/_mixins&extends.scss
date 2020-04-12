@@ -1,7 +1,7 @@
 %container {
+  padding: 0 6.25%;
   max-width: 2000px;
   margin: 0 auto;
-  padding: 0 6.25%;
 
   @media ($tablet) {
     padding: 0 3%;
@@ -50,6 +50,47 @@
     }
   }
 }
+
+/*@mixin triangle2() {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    border-style: solid;
+    border-color: transparent;
+    border-right-width: 25vw;
+    border-left-width: 25vw;
+    border-top-width: 15px;
+    border-bottom-width: 15px;
+
+    @media ($tablet) {
+      bottom: -60px;
+      border-top-width: 30px;
+      border-bottom-width: 30px;
+    }
+
+    @media ($desktop) {
+      bottom: -100px;
+      border-top-width: 50px;
+      border-bottom-width: 50px;
+    }
+  }
+
+  &::after {
+    left: 0;
+    border-top-color: #fff;
+    border-right-color: #fff;
+  }
+
+  &::before {
+    right: 0;
+    border-top-color: #fff;
+    border-left-color: #fff;
+  }
+}*/
 
 @mixin angel-message($message, $color: #d22856) {
   position: relative;
