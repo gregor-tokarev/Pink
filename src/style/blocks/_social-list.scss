@@ -1,0 +1,24 @@
+.social-list {
+  display: flex;
+
+  &__item {
+    border-radius: 50%;
+    border: 3px solid #e9ebec;
+    width: 45px;
+    height: 45px;
+
+    &:nth-child(1) {
+      background: url("images/twitter.png") no-repeat center;
+
+    }
+
+    &:nth-child(2) {
+      background: url("images/facebook.png") no-repeat center;
+      margin: 0 18px;
+    }
+
+    &:nth-child(3) {
+      background: url("images/youtube.png") no-repeat center;
+    }
+  }
+}

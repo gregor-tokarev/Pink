@@ -1,0 +1,29 @@
+.footer {
+  height: 130px;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  color: #283645;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+
+  @media ($tablet) {
+    display: block;
+  }
+
+  &__wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    @extend %container;
+  }
+
+  &__creator {
+    padding: 10px 40px 10px 0;
+    background: url("images/htmlacademy.png") no-repeat right center;
+  }
+}
