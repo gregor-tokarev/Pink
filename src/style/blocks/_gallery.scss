@@ -1,0 +1,40 @@
+.gallery {
+  &__title-wrapper {
+    background-color: #fff;
+    max-width: initial;
+
+    @extend %container;
+  }
+
+  &__title {
+    color: #283645;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 55px 7%;
+    display: block;
+    line-height: 30px;
+
+    @media ($tablet) {
+      font-size: 18px;
+      padding-left: 14%;
+      padding-right: 14%;
+    }
+
+    @media ($desktop) {
+      padding-left: 19.5%;
+      padding-right: 19.5%;
+    }
+  }
+
+  &__photo-wrapper {
+    display: flex;
+    max-width: initial;
+    background-color: #fff;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @extend %container;
+  }
+}

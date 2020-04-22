@@ -1,0 +1,141 @@
+.card {
+  flex-basis: 100%;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  @media ($mobile) {
+    margin: 0 auto;
+  }
+
+  @media ($tablet) {
+    flex-basis: 48%;
+  }
+
+  @media ($desktop) {
+    flex-basis: 31%;
+  }
+
+  &__sticker {
+    color: #fff;
+    font-family: "Open Sans Bold", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 36px;
+    width: 140px;
+    height: 36px;
+    background-color: #d22856;
+    text-transform: uppercase;
+
+    @media ($tablet) {
+      margin-top: 55px;
+    }
+  }
+
+  &__body {
+    background-color: #f2f2f2;
+    padding: 25px 10% 25px 7%;
+  }
+
+  &__image {
+    display: block;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__info-wrapper {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+
+  &__author {
+    font-family: "Open Sans Bold", Arial, sans-serif;
+  }
+
+  &__time {
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  &__footer {
+    display: flex;
+    margin-top: 20px;
+
+    @media ($tablet) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &__new-line {
+    width: 100%;
+    order: 3;
+  }
+
+  &__like {
+    color: #d22856;
+    margin-left: 20px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @media ($tablet) {
+      margin-left: 0;
+    }
+  }
+
+  &--panorama {
+    flex-basis: 100%;
+    position: relative;
+
+    .card__image {
+      margin: 0 -6.25vw;
+
+      @media ($tablet) {
+        margin: 0 -3vw;
+      }
+
+      @media ($desktop) {
+        margin: 0 -10.4vw;
+      }
+    }
+
+    @media ($tablet) {
+      .card__body {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .card__heard {
+        margin-left: 20px;
+      }
+
+      .card__footer {
+        order: 2;
+        margin-left: auto;
+        margin-top: 0;
+      }
+
+      .card__info-wrapper {
+        order: 1;
+      }
+
+      .card__text {
+        order: 4;
+      }
+    }
+  }
+}

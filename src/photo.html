@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Photo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-700.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-regular.woff2" as="font">
+  <link rel="preload" href="fonts/open-sans-v17-cyrillic_latin-300.woff2" as="font">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__wrapper">
+    <picture class="header__logo">
+      <source media="(min-width:960px)" srcset="images/logotype-white-desktop.svg">
+      <source media="(min-width:660px)" srcset="images/logotype-white-tablet.svg">
+      <img src="images/logotype-white-mobile.svg" alt="logo">
+    </picture>
+    <button class="header__toggle-button button-reset"></button>
+    <nav class="header__nav">
+      <ul class="header__list list-reset">
+        <li class="header__list-item">Главная</li>
+        <li class="header__list-item">Фотографии</li>
+        <li class="header__list-item">Конкурс</li>
+        <li class="header__list-item">HTML Academy</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="intro intro--text-only">
+  <div class="intro__wrapper">
+    <p class="intro__text-logo">Фотографии
+      пользователей</p>
+  </div>
+</section>
+
+<main class="gallery">
+  <div class="gallery__title-wrapper">
+    <h1 class="gallery__title">Взгляните на фотографии, которые выкладывают
+      пользователи!
+      Видите, как не хватает ваших?</h1>
+  </div>
+  <div class="gallery__photo-wrapper">
+    <div class="card card--panorama">
+      <div class="card__sticker">ПАНОРАМА ДНЯ</div>
+      <picture class="card__image">
+        <source media="(min-width: 960px)"
+                srcset="images/panorama-desktop.jpg 1x, images/panorama-desktop@2x.jpg 2x, images/panorama-desktop@3x.jpg 3x, images/panorama-desktop@4x.jpg 4x">
+        <source media="(min-width: 660px)"
+                srcset="images/panorama-tablet.jpg 1x, images/panorama-tablet@2x.jpg 2x, images/panorama-tablet@3x.jpg 3x, images/panorama-tablet@4x.jpg 4x">
+        <img src="images/panorama-mobile.jpg" alt="photo"
+             srcset="images/panorama-mobile@2x.jpg 2x, images/panorama-mobile@3x.jpg 3x, images/panorama-mobile@4x.jpg 4x">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__new-line"></div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <picture class="card__image">
+        <source media="(min-width: 960px)" srcset="images/photo-1-desktop.jpg">
+        <source media="(min-width: 660px)" srcset="images/photo-1-tablet.jpg">
+        <img src="images/photo-1-mobile.jpg" alt="photo">
+      </picture>
+      <div class="card__body">
+        <div class="card__info-wrapper">
+          <span class="card__author">Левон</span>
+          <span class="card__time">(5 часов назад)</span>
+        </div>
+        <div class="card__text">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+        <div class="card__footer">
+          <div class="card__heard">
+            <img src="images/icon-heart-empty.png" alt="">
+          </div>
+          <div class="card__like">Нравится: 356</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h1 class="gallery__title">Затмите их всех! <br>
+    Выкладывайте все, что накопилось в телефоне!</h1>
+</main>
+<section class="photo-editor">
+  <div class="photo-editor__wrapper">
+    <div class="photo-editor__photo">
+      <img src="images/photo-7-desktop.png" alt=""
+           srcset="images/photo-7-desktop@2x.png 2x, images/photo-7-desktop@3x.png 3x, images/photo-7-desktop@4x.png 4x">
+    </div>
+    <div class="photo-editor__panel">
+      <div class="photo-editor__filters">
+        <div class="photo-editor__filter">
+          <div class="photo-editor__filter-icon">
+            <img src="images/crop.png" alt="">
+          </div>
+          <input type="range" class="photo-editor__range range-input"></div>
+        <div class="photo-editor__filter">
+          <div class="photo-editor__filter-icon">
+            <img src="images/fill.png" alt="">
+          </div>
+          <input type="range" class="photo-editor__range range-input"></div>
+        <div class="photo-editor__filter">
+          <div class="photo-editor__filter-icon">
+            <img src="images/contrast.png" alt="">
+          </div>
+          <input type="range" class="photo-editor__range range-input"></div>
+      </div>
+      <div class="photo-editor__range-wrapper">
+        <input type="range" class="photo-editor__mobile-range range-input">
+      </div>
+      <div class="photo-editor__buttons-wrapper">
+        <button class="button photo-editor__button button-reset">Запостить</button>
+        <button disabled class="button photo-editor__button button--disabled button-reset">Отмена</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer--mobile-view">
+  <div class="footer__wrapper">
+    <div class="footer__logo">
+      <picture>
+        <source media="(min-width: 960px)" srcset="images/logotype-blue-desktop.png">
+        <img src="images/logotype-blue-tablet.svg.png">
+      </picture>
+    </div>
+    <div class="social-list">
+      <div class="social-list__item"></div>
+      <div class="social-list__item"></div>
+      <div class="social-list__item"></div>
+    </div>
+    <div class="footer__creator">
+      Разработано
+    </div>
+  </div>
+</footer>
+<script src="all.js"></script>
+</body>
+</html>

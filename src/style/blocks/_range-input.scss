@@ -1,0 +1,15 @@
+.range-input {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background-color: #283645;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #d22856;
+    background-color: #f2f2f2;
+  }
+}
