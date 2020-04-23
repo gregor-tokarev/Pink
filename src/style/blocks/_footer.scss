@@ -2,6 +2,7 @@
   height: 130px;
   display: none;
   align-items: center;
+  background-color: #fff;
   justify-content: space-between;
   color: #283645;
   font-family: "Open Sans", Arial, sans-serif;
@@ -15,15 +16,32 @@
 
   &__wrapper {
     display: flex;
-    height: 100%;
     align-items: center;
+    height: 100%;
     justify-content: space-between;
 
     @extend %container;
+
   }
 
   &__creator {
     padding: 10px 40px 10px 0;
     background: url("images/htmlacademy.png") no-repeat right center;
+  }
+
+  &--mobile-view {
+    display: block;
+
+    .footer__wrapper {
+      flex-direction: column;
+
+      > * {
+        margin: 20px 0;
+      }
+
+      @media ($tablet) {
+        flex-direction: row;
+      }
+    }
   }
 }

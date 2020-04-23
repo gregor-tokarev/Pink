@@ -1,11 +1,6 @@
 .intro {
   padding-top: 70px;
-  margin-bottom: 45px;
   background: #2b3848 url('images/back-mobile.jpg') center / cover no-repeat;
-
-  @media ($mobile) {
-    padding: 0;
-  }
 
   @media #{$retina} {
     background-image: url('images/back-mobile@3x.jpg');
@@ -27,16 +22,60 @@
     }
   }
 
+  &--text-only {
+    height: 460px;
+    margin-bottom: -225px;
+
+    @media ($tablet) {
+      height: 730px;
+      margin-bottom: -285px;
+    }
+
+    @media ($desktop) {
+      height: 855px;
+      margin-bottom: -460px;
+    }
+
+    .intro__wrapper {
+      height: 235px;
+      //margin-top: -70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media ($tablet) {
+        height: 445px;
+        min-height: auto;
+      }
+
+      @media ($desktop) {
+        height: 395px;
+      }
+    }
+  }
 
   &__wrapper {
     position: relative;
+    text-align: center;
 
     @media ($mobile) {
       padding: 0;
     }
 
     @extend %container;
+  }
 
+  &__text-logo {
+    color: #fff;
+    display: block;
+    font-family: "Open Sans Light", Arial, sans-serif;
+    font-size: 24px;
+    transform: translateY(-70px);
+    font-weight: 300;
+
+    @media ($tablet) {
+      font-size: 50px;
+    }
   }
 
   @media ($tablet) {

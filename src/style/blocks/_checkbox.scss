@@ -1,0 +1,43 @@
+.checkbox {
+  display: flex;
+
+  input {
+    display: none;
+
+    &:checked + .checkbox__label > .checkbox__box {
+      background-image: url("images/check-mark.png");
+    }
+  }
+
+  &__label {
+    color: #283645;
+    display: flex;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 18px;
+    user-select: none;
+    font-weight: 400;
+    line-height: 30px;
+  }
+
+  &__box {
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    line-height: 35px;
+    margin-right: 30px;
+    text-align: center;
+    background: #fff center no-repeat;
+  }
+
+  &--radio {
+    .checkbox__box {
+      border-radius: 50%;
+    }
+
+    input {
+      &:checked + .checkbox__label > .checkbox__box {
+        background-image: url("images/circle.png");
+      }
+    }
+  }
+}
