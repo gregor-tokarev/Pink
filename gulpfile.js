@@ -23,13 +23,20 @@ gulp.task('style', () => {
             .pipe(plumb())
             .pipe(sourcemap.init())
             .pipe(sass())
+            .pipe(autoprefixer({
+                cascade: false,
+                overrideBrowserslist: ['last 10 versions'],
+            }))
             .pipe(sourcemap.write('.'))
             .pipe(gulp.dest('dist/'))
             ;
     else
         return gulp.src('src/style/**/*.{sass,scss}')
-            .pipe(autoprefixer({cascade: false}))
             .pipe(sass({outputStyle: 'compressed'}))
+            .pipe(autoprefixer({
+                cascade: false,
+                overrideBrowserslist: ['last 10 versions'],
+            }))
             .pipe(sourcemap.write('.'))
             .pipe(concat('style.css'))
             .pipe(gulp.dest('dist/'))
