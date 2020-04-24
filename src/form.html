@@ -44,46 +44,66 @@
       </div>
     </h1>
     <div class="form__flex-wrapper">
-      <div class="form__item"></div>
-      <div class="form__item form__progress">
-
-        <div class="progress__wrapper">
-          <div class="checkbox">
+      <div class="form__item form__user-info">
+        <div class="form__user-info-wrapper">
+          <label class="form__input-label">
+            <div class="form__input-text">Фамилия:</div>
+            <input type="text" placeholder="Укажите фамилию *" class="input form__user-info-item">
+          </label>
+          <label class="form__input-label">
+            <div class="form__input-text">Имя:</div>
+            <input type="text" placeholder="Введите ваше имя *" class="input form__user-info-item">
+          </label>
+          <label class="form__input-label">
+            <div class="form__input-text">Отчество:</div>
+            <input type="text" placeholder="Ну и отчество тоже" class="input form__user-info-item">
+          </label>
+        </div>
+      </div>
+      <fieldset class="form__item form__progress">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <h2 class="form__progress-title form__item-title">
+          Ваши безбашенные
+          достижения в путешествии
+        </h2>
+        <div class="form__progress-wrapper">
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-1">
             <label for="checkbox-1" class="checkbox__label">
               <div class="checkbox__box"></div>
               Сделал селфи с акулой
             </label>
           </div>
-          <div class="checkbox">
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-2">
             <label for="checkbox-2" class="checkbox__label">
               <div class="checkbox__box"></div>
               Обгорел на пляже
             </label>
           </div>
-          <div class="checkbox">
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-3">
             <label for="checkbox-3" class="checkbox__label">
               <div class="checkbox__box"></div>
               Видел Чака Норриса
             </label>
           </div>
-          <div class="checkbox">
+          <div class="form__progress-spacer"></div>
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-4">
             <label for="checkbox-4" class="checkbox__label">
               <div class="checkbox__box"></div>
               Накупил сувениров
             </label>
           </div>
-          <div class="checkbox">
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-5">
             <label for="checkbox-5" class="checkbox__label">
               <div class="checkbox__box"></div>
               Удержал башню
             </label>
           </div>
-          <div class="checkbox">
+          <div class="checkbox form__checkbox">
             <input type="checkbox" id="checkbox-6">
             <label for="checkbox-6" class="checkbox__label">
               <div class="checkbox__box"></div>
@@ -91,10 +111,82 @@
             </label>
           </div>
         </div>
+      </fieldset>
+      <fieldset class="form__item form__contact-info">
+        <legend class="form__legend">Контактная информация</legend>
+        <div class="form__contact-info-wrapper">
+          <label class="form__input-label--reverse form__input-label">
+            <div class="form__input-text">Номер телефона</div>
+            <div class="form__user-info-item input-group">
+            <input type="text" placeholder="Номер, пожалуйста" class="form__user-info-item input-group__input">
+              <div class="input-group__append">
+                <img src="images/phone.png" alt="">
+              </div>
+            </div>
+          </label>
+          <label class="form__input-label--reverse form__input-label">
+            <div class="form__input-text">адрес почты</div>
+            <div class="form__user-info-item input-group">
+              <input type="text" placeholder="Введите почту *" class="form__user-info-item input-group__input">
+              <div class="input-group__append">
+                <img src="images/mail.png" alt="">
+              </div>
+            </div>
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="form__item form__progress">
+        <legend class="form__legend">С каким приложением путешествовали?</legend>
+        <div class="form__progress-wrapper">
+          <h2 class="form__progress-title form__item-title">
+            С каким приложением
+            путешествовали?
+          </h2>
+          <div class="checkbox form__checkbox checkbox--radio">
+            <input name="app" type="radio" id="radio-1">
+            <label for="radio-1" class="checkbox__label">
+              <div class="checkbox__box"></div>
+              Pink для iOS
+            </label>
+          </div>
+          <div class="checkbox form__checkbox checkbox--radio">
+            <input name="app" type="radio" id="radio-2">
+            <label for="radio-2" class="checkbox__label">
+              <div class="checkbox__box"></div>
+              Pink на Android
+            </label>
+          </div>
+          <div class="checkbox form__checkbox checkbox--radio">
+            <input name="app" type="radio" id="radio-3">
+            <label for="radio-3" class="checkbox__label">
+              <div class="checkbox__box"></div>
+              Windows Phone
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class="form__item form__review">
+        <legend class="form__legend">Опишите свои эмоции</legend>
+        <h2 class="form__progress-title form__item-title">
+          Опишите свои эмоции
+        </h2>
+
+        <div class="form__review-wrapper">
+          <textarea
+                  cols="30"
+                  rows="10"
+                  class="form__review-input"
+                  placeholder="Можно прям в красках, не стесняясь в выражениях"
+          >
+          </textarea>
+        </div>
+      </fieldset>
+    </div>
+    <div class="form__send">
+      <button class="button-reset form__send-button">Отправить</button>
+      <div class="form__send-info">
+        <span>*</span>— обязательные для заполнения поля
       </div>
-      <div class="form__item"></div>
-      <div class="form__item"></div>
-      <div class="form__item"></div>
     </div>
   </form>
 </main>
