@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     htmlmin = require('gulp-htmlnano'),
     sourcemap = require('gulp-sourcemaps');
 
-const isDev = true;
+const isDev = false;
 
 
 gulp.task('style', () => {
