@@ -8,7 +8,7 @@
 
 > This is layout of app info site. Adopted for mobile. Project was created for educational perpuses
 
-### 🏠 [Homepage](https://github.io/gregor-tokarev/Pink)
+### 🏠 [Homepage](https://candid-rabanadas-b7943c.netlify.app/)
 
 
 ## Install
