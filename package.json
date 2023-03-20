@@ -1,5 +1,5 @@
 {
-  "name": "Mishka",
+  "name": "pink",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,6 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "^12"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
