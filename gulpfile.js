@@ -14,7 +14,7 @@ const gulp = require('gulp'),
     htmlmin = require('gulp-htmlnano'),
     sourcemap = require('gulp-sourcemaps');
 
-const isDev = process.env.NODE_ENV ? process.env.NODE_ENV !== 'production' : true;
+const isDev = false;
 
 
 gulp.task('style', () => {
