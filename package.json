@@ -6,8 +6,8 @@
   "scripts": {
     "style": "stylelint ./src/style/**/*{.scss,.sass} --fix --color --config ./.stylelintrc --syntax scss",
     "style:fix": "stylelint src/style/**/*.scss --syntax scss --fix",
-    "build": "gulp build",
-    "dev": "gulp dev"
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "dev": "./node_modules/gulp/bin/gulp.js dev"
   },
   "keywords": [],
   "author": "",
